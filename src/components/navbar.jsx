@@ -8,20 +8,26 @@ const Navbar = () => {
         top: '2rem',
         left: '50%',
         transform: 'translateX(-50%)',
-        minWidth: '320px',
-        maxWidth: '600px',
+        minWidth: '380px',
+        maxWidth: '650px',
         background: 'rgba(34,34,34,0.95)',
         color: '#fff',
-        padding: '1rem 2rem',
+        padding: '',
         zIndex: 1000,
         borderRadius: '2rem',
         boxShadow: '0 4px 24px rgba(0,0,0,0.25)',
         display: 'flex',
+        height: '50px',
         justifyContent: 'center',
         alignItems: 'center',
         border: '1px solid #444'
       }}
     >
+      <img 
+        src="/src/assets/logo.png"
+        alt="Logo"
+        style={{ borderRadius: '2rem',height: '45px', marginRight: '1rem', flexShrink: 0, justifyContent: 'left' }}
+      />
       <ul style={{ display: 'flex', listStyle: 'none', margin: 0, padding: 0 }}>
         <li style={{ marginRight: '2rem' }}>
           <a
