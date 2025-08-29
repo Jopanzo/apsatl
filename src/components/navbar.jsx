@@ -23,7 +23,19 @@ const Navbar = () => {
       }}
     >
       <ul style={{ display: 'flex', listStyle: 'none', margin: 0, padding: 0 }}>
-        <li style={{ marginRight: '2rem' }}><a href="/" style={{ color: '#fff', textDecoration: 'none', fontSize: '1.2rem' }}>Home</a></li>
+        <li style={{ marginRight: '2rem' }}>
+          <a
+            href="/"
+            style={{
+              color: window.location.pathname === '/' ? 'gold' : '#fff',
+              textDecoration: 'none',
+              fontSize: '1.2rem',
+              fontWeight: window.location.pathname === '/' ? 'bold' : 'normal'
+            }}
+          >
+            Home
+          </a>
+        </li>
         <li><a href="/about" style={{ color: '#fff', textDecoration: 'none', fontSize: '1.2rem' }}>About</a></li>
       </ul>
     </nav>
