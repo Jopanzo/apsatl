@@ -42,7 +42,17 @@ const Navbar = () => {
             Home
           </a>
         </li>
-        <li><a href="/about" style={{ color: '#fff', textDecoration: 'none', fontSize: '1.2rem' }}>About</a></li>
+        <li>
+          <a 
+              href="/about" 
+              style={{ 
+                color: window.location.pathname === '/about' ? 'gold' : '#fff',
+                textDecoration: 'none', 
+                fontSize: '1.2rem', 
+                fontWeight: window.location.pathname === '/' ? 'bold' : 'normal'}}>
+            About
+          </a>
+        </li>
       </ul>
     </nav>
   );
