@@ -8,7 +8,7 @@ const Navbar = () => {
         top: '2rem',
         left: '50%',
         transform: 'translateX(-50%)',
-        minWidth: '380px',
+        minWidth: '480px',
         maxWidth: '650px',
         background: 'rgba(34,34,34,0.95)',
         color: '#fff',
@@ -26,10 +26,10 @@ const Navbar = () => {
       <img 
         src="/src/assets/logo.png"
         alt="Logo"
-        style={{ borderRadius: '2rem',height: '45px', marginRight: '1rem', flexShrink: 0, justifyContent: 'left' }}
+        style={{ borderRadius: '2rem', height: '45px', marginRight: '1rem', flexShrink: 0 }}
       />
-      <ul style={{ display: 'flex', listStyle: 'none', margin: 0, padding: 0 }}>
-        <li style={{ marginRight: '2rem' }}>
+  <ul style={{ display: 'flex', listStyle: 'none', margin: 0, padding: 0, flex: 1, justifyContent: 'space-evenly', alignItems: 'center' }}>
+        <li style={{ marginRight: '1rem' }}>
           <a
             href="/"
             style={{
@@ -51,6 +51,17 @@ const Navbar = () => {
                 fontSize: '1.2rem', 
                 fontWeight: window.location.pathname === '/' ? 'bold' : 'normal'}}>
             About
+          </a>
+        </li>
+        <li>
+          <a 
+              href="/contact" 
+              style={{ 
+                color: window.location.pathname === '/contact' ? 'gold' : '#fff',
+                textDecoration: 'none', 
+                fontSize: '1.2rem', 
+                fontWeight: window.location.pathname === '/' ? 'bold' : 'normal'}}>
+            Contact Us
           </a>
         </li>
       </ul>
