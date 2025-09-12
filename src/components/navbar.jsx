@@ -8,7 +8,7 @@ const Navbar = () => {
         top: '2rem',
         left: '50%',
         transform: 'translateX(-50%)',
-        minWidth: '480px',
+        minWidth: '600px',
         maxWidth: '650px',
         background: 'rgba(34,34,34,0.95)',
         color: '#fff',

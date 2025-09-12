@@ -1,0 +1,26 @@
+/* OurSevices.css */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Creates 4 equal-width columns */
+  gap: 20px; /* Spacing between columns and rows */
+}
+
+.grid-item {
+  background-color: lightblue;
+  padding: 20px;
+  border: 1px solid blue;
+  min-height: 200px;
+}
+
+/* Optional: Responsiveness for smaller screens */
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .grid-container {
+    grid-template-columns: 1fr; /* 1 column on small screens */
+  }
+}

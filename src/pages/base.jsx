@@ -3,9 +3,11 @@ import Navbar from '../components/navbar';
 
 const Base = ({ children }) => {
   return (
-    <div>
+    <div style={{ 
+        backgroundColor: '#f0f0f0',
+    }}>
       <Navbar />
-      <main>{children}</main>
+      <main style={{ paddingTop: '50px' }}>{children}</main>
     </div>
   );
 };
