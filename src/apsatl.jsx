@@ -1,28 +1,20 @@
 import React from 'react';
-import Navbar from './components/navbar';
+import { Routes, Route } from 'react-router-dom';
+import Base from './pages/base';
 import Home from './pages/Home';
 import About from './pages/About';
+import Contact from './pages/Contact';
 
 const Apsatl = () => {
-  const path = typeof window !== 'undefined' ? window.location.pathname : '/';
-  let Content = Home;
-  if (path === '/about') Content = About;
-
   return (
-    <div
-      style={{
-        minHeight: '100vh',
-        width: '100vw',
-        backgroundImage: 'url(/src/assets/roof1.png)',
-        backgroundSize: 'cover',
-        backgroundPosition: 'top',
-        backgroundRepeat: 'no-repeat',
-      }}
-    >
-      <Navbar />
-      <div style={{ position: 'relative', zIndex: 1, minHeight: 'calc(100vh - 120px)', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', color: '#fff', textShadow: '0 2px 8px #000', paddingTop: '120px' }}>
-        <Content />
-      </div>
+    <div className="app">
+      <Base>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </Base>
     </div>
   );
 };

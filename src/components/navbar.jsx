@@ -29,7 +29,7 @@ const Navbar = () => {
         style={{ borderRadius: '2rem', height: '45px', marginRight: '1rem', flexShrink: 0 }}
       />
   <ul style={{ display: 'flex', listStyle: 'none', margin: 0, padding: 0, flex: 1, justifyContent: 'space-evenly', alignItems: 'center' }}>
-        <li style={{ marginRight: '1rem' }}>
+        <li>
           <a
             href="/"
             style={{
@@ -63,6 +63,16 @@ const Navbar = () => {
                 fontWeight: window.location.pathname === '/' ? 'bold' : 'normal'}}>
             Contact Us
           </a>
+        </li>
+        <li>
+          <p
+            style={{ 
+              color: '#a7dee0ff',
+              textDecoration: 'none', 
+              fontSize: '1.2rem', 
+              fontWeight: 'normal'}}>
+            0123456789
+          </p>
         </li>
       </ul>
     </nav>
