@@ -71,7 +71,7 @@ const Navbar = () => {
               textDecoration: 'none', 
               fontSize: '1.2rem', 
               fontWeight: 'normal'}}>
-            0123456789
+            {import.meta.env.VITE_GUNDO_PHONE}
           </p>
         </li>
       </ul>

@@ -1,0 +1,11 @@
+.grid2-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 20px; /* Spacing between columns and rows */
+  justify-content: center;
+}
+.grid2-item {
+  /* padding: 20px; */
+  justify-self: center; 
+ 
+}
