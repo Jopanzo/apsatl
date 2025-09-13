@@ -33,7 +33,7 @@ const Navbar = () => {
           <a
             href="/"
             style={{
-              color: window.location.pathname === '/' ? 'gold' : '#fff',
+              color: window.location.pathname === '/' ? 'var(--gold)' : '#fff',
               textDecoration: 'none',
               fontSize: '1.2rem',
               fontWeight: window.location.pathname === '/' ? 'bold' : 'normal'
@@ -46,7 +46,7 @@ const Navbar = () => {
           <a 
               href="/about" 
               style={{ 
-                color: window.location.pathname === '/about' ? 'gold' : '#fff',
+                color: window.location.pathname === '/about' ? 'var(--gold)' : '#fff',
                 textDecoration: 'none', 
                 fontSize: '1.2rem', 
                 fontWeight: window.location.pathname === '/' ? 'bold' : 'normal'}}>
@@ -57,7 +57,7 @@ const Navbar = () => {
           <a 
               href="/contact" 
               style={{ 
-                color: window.location.pathname === '/contact' ? 'gold' : '#fff',
+                color: window.location.pathname === '/contact' ? 'var(--gold)': '#fff',
                 textDecoration: 'none', 
                 fontSize: '1.2rem', 
                 fontWeight: window.location.pathname === '/' ? 'bold' : 'normal'}}>
