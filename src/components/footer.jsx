@@ -1,6 +1,8 @@
 import React from 'react';
+import './css/footer.css';
 
 const Footer = () => {
+    const address = import.meta.env.VITE_ADDRESS;
 	const outer = {
 		width: '100%',
 		background: 'rgba(255,255,255,0.95)',
@@ -23,10 +25,19 @@ const Footer = () => {
 	};
 
 	return (
-		<footer style={outer}>
-			<div style={inner}>
+		<footer>
+			{/* <div style={inner}> */}
+            <div className="grid2-container">
+                <div className="grid2-item"> 
+                    Address: <br /> {address} <br />
+                    Phone: <br /> {import.meta.env.VITE_GUNDO_PHONE}
+                </div>
+                <div className="grid2-item"> {address}</div>
+                <div className="grid2-item"> {address}</div>
+            </div>
+            
 				<div style={textStyle}>© {new Date().getFullYear()} APSATL — All rights reserved</div>
-			</div>
+			{/* </div> */}
 		</footer>
 	);
 };
