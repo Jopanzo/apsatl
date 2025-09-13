@@ -4,6 +4,7 @@ import Base from './pages/base';
 import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import Footer from './components/footer';
 
 const Apsatl = () => {
   return (
@@ -15,6 +16,7 @@ const Apsatl = () => {
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </Base>
+      <Footer />
     </div>
   );
 };
