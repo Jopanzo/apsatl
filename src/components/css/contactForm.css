@@ -1,0 +1,11 @@
+.contact-button{
+  background-color: var(--gold);
+  /* color: #fff; */
+  /* border: none; */
+  /* padding: .6rem 1rem;
+  border-radius: 8px;
+  cursor: pointer; */
+}
+.contact-button:hover{
+  filter: brightness(.95);
+}
