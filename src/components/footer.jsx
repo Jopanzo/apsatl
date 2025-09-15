@@ -29,11 +29,31 @@ const Footer = () => {
 			{/* <div style={inner}> */}
             <div className="grid2-container">
                 <div className="grid2-item"> 
-                    Address: <br /> {address} <br />
-                    Phone: <br /> {import.meta.env.VITE_GUNDO_PHONE}
+                    <div className="service-title">
+						Address:
+					</div>
+					{address} 
+					<br />
+                    Phone: 
+					<br />
+					{import.meta.env.VITE_GUNDO_PHONE}
                 </div>
-                <div className="grid2-item"> {address}</div>
-                <div className="grid2-item"> {address}</div>
+                <div className="grid2-item">
+					<div className="service-title">
+						Office Hours:
+					</div> 
+					Mon-Fri: 8am - 6pm EST <br />
+					Sat-Sun: Closed
+				</div>
+                <div className="grid2-item">
+					<div className="service-title">
+						Services:
+					</div>
+					Restoration & Repair <br />
+					New Roof Installation <br />
+					Gutter Installation & Repair <br />
+					Free Roof Inspections & Estimates <br />
+				</div>
             </div>
             
 				<div style={textStyle}>© {new Date().getFullYear()} APSATL — All rights reserved</div>
